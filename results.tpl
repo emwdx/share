@@ -11,8 +11,6 @@
 These are the responses:</p>
 </div>
 
-
-<hr>
 <table class="table table-bordered table-hover">
 
 %for row in results[1:]:
@@ -20,14 +18,16 @@ These are the responses:</p>
     <b>{{row[0]}}:</b> {{row[1]}}</tr>
 %end
 </table>
-<hr>
+
+<form action = "/share/{{roomnumber}}/record/" method = "GET class = "form-horizontal">
+<button type = "submit" class = "btn">Refresh the page.</button>
+</form>
 Add another response:
-    
 <form action = "/share/{{roomnumber}}/results/" method = "POST" class = "form-horizontal">
 What is your name?
-<input type = "text" name = "name" /><p>
+<input type = "text" name = "name" />
 What is your response?
-<input type = "text" name = "answer" /><p>
+<input type = "text" name = "answer"  />
 
 <button type = "submit" class = "btn">Submit my response.</button>
 </form>

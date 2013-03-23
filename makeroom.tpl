@@ -10,11 +10,17 @@
  <p>Ask it below.</p>
 </div>
 
-<form action = "/share/" method = "POST" class = "form-horizontal">
+<div class="row">
+  <div class="span4 offset3"><p class = "lead">What is your question?</p></div>
+  <div class="span5">
+          <form action = "/share/" method = "POST" class = "form-horizontal">
+        <input type = "text" name = "question"  class="input-large" placeholder="Enter your question here." />
 
-What is your question?
-<input type = "text" name = "question"  />
+        <button type = "submit" class = "btn">Make my page!</button>
+        </form></div>
+</div>
 
-<button type = "submit" class = "btn">Make my page!</button>
-</form>
+</div>
+</div>
+</div>
 </html>

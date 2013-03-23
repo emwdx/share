@@ -10,6 +10,8 @@
  <p>There's your question. Now let's see what people think.</p>
 </div>
 
+<h4 class = "text-info">Send people this link: /share/{{roomnumber}}/ </h4>
+
 <form action = "/share/{{roomnumber}}/" method = "GET" class = "form-horizontal">
 
 <button type = "submit" class = "btn">Collect responses</button>

@@ -7,9 +7,21 @@
 </head>
 <div class="hero-unit">
   <h1>{{question}}</h1>
- <p>We'd love to know what you think about this.</p>
+ 
 </div>
 
+<table class="table table-bordered table-hover">
+
+%for row in results[1:]:
+    <tr><td>
+    <b>{{row[0]}}:</b> {{row[1]}}</tr>
+%end
+</table>
+
+<form action = "/share/{{roomnumber}}/record/" method = "GET class = "form-horizontal">
+<button type = "submit" class = "btn">Refresh the page.</button>
+</form>
+Add another response:
 <form action = "/share/{{roomnumber}}/results/" method = "POST" class = "form-horizontal">
 What is your name?
 <input type = "text" name = "name" />
@@ -18,4 +30,3 @@ What is your response?
 
 <button type = "submit" class = "btn">Submit my response.</button>
 </form>
-</html>
